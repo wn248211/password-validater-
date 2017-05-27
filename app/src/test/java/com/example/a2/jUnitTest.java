@@ -20,5 +20,5 @@ public class jUnitTest {
 
         assertEquals(false,passwordValidater.isShort("123"));
     }
- 
+
 }
