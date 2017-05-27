@@ -20,5 +20,18 @@ public class jUnitTest {
 
         assertEquals(false,passwordValidater.isShort("123"));
     }
+    @Test
+    public void Upper() throws Exception {
 
+        assertEquals(false,passwordValidater.isUpperCase("xianjian12"));
+    }
+    @Test
+    public void Mix() throws Exception {
+
+        assertEquals(false,passwordValidater.isMix("xianjian"));
+    }
+    @Test
+    public void Illegal() throws Exception {
+        assertEquals(false,passwordValidater.includeIllegal("Xianjian12#"));
+    }
 }
